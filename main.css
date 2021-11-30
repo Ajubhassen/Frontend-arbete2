@@ -1,0 +1,48 @@
+@media screen and (min-width: 560px) {
+  * {
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    color: linear-gradient(65deg, #b529e7, #d82b2b);
+    background: ghostwhite; }
+  button {
+    background-color: white;
+    color: black;
+    box-shadow: -3px 6px 4px #222; }
+  option {
+    background-color: white; }
+  select, input {
+    box-shadow: -3px 6px 4px #222;
+    background-color: white;
+    color: black; }
+  li {
+    width: 250px;
+    background-color: white;
+    box-shadow: -3px 6px 4px #222;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    transition: 0.9s linear; }
+  li span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    background: #e00; }
+  .vinst {
+    font-size: 16px; }
+  .kostnads-lista {
+    font-size: 20px; }
+  .firstrubrik {
+    padding: 5%;
+    margin: 0px;
+    width: 100%;
+    box-sizing: 40px;
+    background: linear-gradient(65deg, #b529e7, #d82b2b);
+    text-align: center;
+    color: ghostwhite;
+    font-size: 50px; } }

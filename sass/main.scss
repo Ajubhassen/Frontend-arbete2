@@ -1,0 +1,81 @@
+@import "./variable.scss";
+@import "./global.scss"; 
+
+
+  @media screen and (min-width: 560px) {
+
+  * {
+      font-family: 'montserrat', sans-serif;
+      box-sizing: border-box; 
+      color: linear-gradient(65deg,rgb(181, 41, 231),rgb(216, 43, 43));
+      background: rgb(248, 248, 255)
+      ;
+
+      
+      
+  }
+  button{
+      background-color: white; 
+      color: black;
+      box-shadow: -3px 6px 4px #222; 
+
+  }
+  option{
+      background-color: white; 
+  }
+
+  select, input{
+      box-shadow: -3px 6px 4px #222; 
+      background-color: white;
+      color: black;
+
+  }
+
+  li{
+      width: 250px;
+      background-color: white;
+      box-shadow: -3px 6px 4px #222; 
+      height: 40px;
+      line-height: 40px;
+      padding: 0 5px;
+      position: relative;
+      cursor: pointer;
+      display: block;
+      margin: 5px 0;
+      transition: 0.9s linear;
+ }
+   
+  li span{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      text-align: center;
+      background: #e00;
+  }
+
+  .vinst {
+    font-size: 16px;
+
+    }
+
+    .kostnads-lista{
+        font-size: 20px;
+    }
+
+    .firstrubrik{
+        padding: 5%;
+        margin: 0px;
+        width: 100%;
+        box-sizing: 40px;
+        background:linear-gradient(65deg,rgb(181, 41, 231),rgb(216, 43, 43));
+        text-align: center;
+        color:rgb(248, 248, 255) ;
+        font-size: 50px;  
+    }    
+
+        
+  }    
+        
+  
+      
