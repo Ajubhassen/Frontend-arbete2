@@ -1,11 +1,12 @@
-document.querySelector("button").addEventListener("click", calculateBudget)
+document.querySelector("button").addEventListener("click", budgetApp)
 
 let kostnadLista = [];
 let budgetLista = [];
-function calculateBudget(e) {
+function budgetApp(e) {
     e.preventDefault();
   
 const option= document.querySelector("select");
+
 
 if(option.value=="+"){    
 
@@ -26,17 +27,9 @@ if(option.value =="-"){
 
     kostnadDiv.innerHTML += `<li style="list-style-type:none;">${beskrivning}     ${value} Kr<span>X<span></li>`;
     
-    /*
-    const myLi = document.querySelector('li');
-    const mySpan = document.querySelector('span');
-    mySpan.innerHTML = 'x';
-    myLi.appendchild(mySpan);*/
-
 
  }
-/*
- const close = document.querySelectorAll('span')*/
-
+ 
 var kostnadSumma= 0;
  for( var i= 0; i<kostnadLista.length ; i++){
      kostnadSumma += Number(kostnadLista[i]);
@@ -51,14 +44,5 @@ var kostnadSumma= 0;
  const balansDiv = document.querySelector(".balans")
  balansDiv.textContent = budgetSumma-kostnadSumma
 
-if(balansDiv.value < 0)
-{
-    alert("showred")
-}
 
-if(option.value=="Välj") 
-{
-    alert("Halloooj, Du måste välja mellan + eller -")
-}
-  
 }
