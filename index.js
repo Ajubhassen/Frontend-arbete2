@@ -7,7 +7,6 @@ function budgetApp(e) {
   
 const option= document.querySelector("select");
 
-
 if(option.value=="+"){    
 
   const beskrivning =  document.querySelector("#beskriv").value;
@@ -27,7 +26,6 @@ if(option.value =="-"){
 
     kostnadDiv.innerHTML += `<li style="list-style-type:none;">${beskrivning}     ${value} Kr<span>X<span></li>`;
     
-
  }
  
 var kostnadSumma= 0;
@@ -40,9 +38,7 @@ var kostnadSumma= 0;
      budgetSumma += Number(budgetLista[i])
  }
 
-
  const balansDiv = document.querySelector(".balans")
  balansDiv.textContent = budgetSumma-kostnadSumma
-
 
 }
