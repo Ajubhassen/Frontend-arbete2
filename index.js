@@ -14,7 +14,7 @@ if(option.value=="+"){
   inkomstLista.push(value)
  const div= document.querySelector(".inkomst-lista");
 
- div.innerHTML   += `<li style="list-style-type:none;">${description}     ${value} Kr</li>`
+ div.innerHTML   += `<li style="list-style-type:none;">${description}     ${value} Kr<span>X<span></li>`
 }
 
 if(option.value =="-"){
