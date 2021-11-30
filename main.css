@@ -45,4 +45,8 @@
     background: linear-gradient(65deg, #b529e7, #d82b2b);
     text-align: center;
     color: ghostwhite;
-    font-size: 50px; } }
+    font-size: 50px; }
+  form {
+    position: absolute;
+    left: 400px;
+    margin-top: 20px; } }

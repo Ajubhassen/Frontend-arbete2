@@ -1,7 +1,7 @@
 document.querySelector("button").addEventListener("click", calculateBudget)
 
 let kostnadLista = [];
-let inkomstLista = [];
+let budgetLista = [];
 function calculateBudget(e) {
     e.preventDefault();
   
@@ -9,22 +9,22 @@ const option= document.querySelector("select");
 
 if(option.value=="+"){    
 
-  const description =  document.querySelector("#desc").value;
-  const value = document.querySelector("#num").value;
-  inkomstLista.push(value)
- const div= document.querySelector(".inkomst-lista");
+  const beskrivning =  document.querySelector("#beskriv").value;
+  const value = document.querySelector("#nummer").value;
+  budgetLista.push(value)
+ const div= document.querySelector(".budget-lista");
 
- div.innerHTML   += `<li style="list-style-type:none;">${description}     ${value} Kr<span>X<span></li>`
+ div.innerHTML   += `<li style="list-style-type:none;">${beskrivning}     ${value} Kr<span>X<span></li>`
 }
 
 if(option.value =="-"){
 
-    const description = document.querySelector("#desc").value;
-    const value = document.querySelector("#num").value;
+    const beskrivning = document.querySelector("#beskriv").value;
+    const value = document.querySelector("#nummer").value;
     kostnadLista.push(value)
     const kostnadDiv= document.querySelector(".kostnad-lista");
 
-    kostnadDiv.innerHTML += `<li style="list-style-type:none;">${description}     ${value} Kr<span>X<span></li>`;
+    kostnadDiv.innerHTML += `<li style="list-style-type:none;">${beskrivning}     ${value} Kr<span>X<span></li>`;
     
     /*
     const myLi = document.querySelector('li');
@@ -41,16 +41,20 @@ var kostnadSumma= 0;
  for( var i= 0; i<kostnadLista.length ; i++){
      kostnadSumma += Number(kostnadLista[i]);
  }
- var inkomstSumma=0;
- for( var i= 0; i<inkomstLista.length; i++)
+ var budgetSumma=0;
+ for( var i= 0; i<budgetLista.length; i++)
  { 
-     inkomstSumma += Number(inkomstLista[i])
+     budgetSumma += Number(budgetLista[i])
  }
- console.log(inkomstSumma, kostnadSumma)
 
 
- const vinstDiv = document.querySelector(".vinst")
- vinstDiv.textContent = inkomstSumma-kostnadSumma
+ const balansDiv = document.querySelector(".balans")
+ balansDiv.textContent = budgetSumma-kostnadSumma
+
+if(balansDiv.value < 0)
+{
+    alert("showred")
+}
 
 if(option.value=="Välj") 
 {
